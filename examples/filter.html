@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Filter Table Content</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Filter Table Content example">
+	<meta name="keywords" content="jquery filters, jquery filtering, live search, interactive input">
+	<meta name="author" content="Malik Singleton">
+<link rel="stylesheet" href="filter-style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Patua+One|Special+Elite">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<h1>Filter Table Content</h1>
+<h2>Inspect page script for detailed comments</h2>
+<hr>
+<p>This is an example of a filterable table, which a few lines of jQuery makes interactive. It's my version of W3School's <a href="https://www.w3schools.com/jquery/jquery_filters.asp" target="_blank">jQuery Filters</a> example, which I've customized for my own students and course.</p>
+<p>Use this search field to find specific results in the data:</p>
+<input id="search-field" type="text" placeholder="Search...">
+<br><br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Substance</th>
+      <th>US Addicts</th>
+      <th>Stat Year</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody id="table-content">
+    <tr>
+      <td>Heroin</td>
+      <td>586,000</td>
+      <td>2015</td>
+      <td><a href="https://www.asam.org/" target="_blank">ASAM</a></td>
+    </tr>
+    <tr>
+      <td>Cocaine</td>
+      <td>900,000</td>
+      <td>2014</td>
+      <td><a href="https://nsduhweb.rti.org/" target="_blank">NSDUH</a></td>
+    </tr>
+    <tr>
+      <td>Prescriptions</td>
+      <td>2,000,000</td>
+      <td>2014</td>
+      <td><a href="https://www.asam.org/" target="_blank">ASAM</a></td>
+    </tr>
+    <tr>
+      <td>Marijuana</td>
+      <td>4,200,000</td>
+      <td>2014</td>
+      <td><a href="https://nsduhweb.rti.org/" target="_blank">NSDUH</a></td>
+    </tr>
+    <tr>
+      <td>Alcohol</td>
+      <td>16,600,000</td>
+      <td>2013</td>
+      <td><a href="https://www.ncadd.org/" target="_blank">NCADD</a></td>
+    </tr>
+  </tbody>
+</table>
+  
+<p><cite>Data Source: <a href="https://americanaddictioncenters.org/rehab-guide/addiction-statistics/">Addiction Statistics</a> from American Addiction Centers</cite></p>
+
+<hr>
+
+<details>
+<summary>Notes</summary>
+<p class="footnote">The filter doesn't target the entire table, it only applies to the <code>tbody</code> tag with the <code>table-content</code> ID, to avoid filtering the table header.</p>
+</details>
+
+</body>
+</html>
