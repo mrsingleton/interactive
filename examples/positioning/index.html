@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto+Slab" rel="stylesheet">
+    
+    <!-- Prism code syntax highlighter -->
+    <link href="styles/prism.css" rel="stylesheet" />
+    <script src="scripts/prism.js"></script>
+
+</head>
+
+<body>
+
+<!-- begin centered container div -->
+<div class="centered-content">
+
+<header>
+    <h1>Hotspot Positioning</h1>
+    <h2>Place dots over an image to create hotspot effect</h2>
+</header>
+
+<main role="main">
+    
+    <section>
+        <p>This page has a few moving parts:
+        <ol>
+            <li>The image div is relatively positioned in relation to the whole web page.</li>
+            <li>The hotspots are absolutely positioned in relation to the image div.</li>
+            <li>Dots A and B each have their own unique coordinates.</li>
+            <li>Width dimensions are set by percentages, not pixels, for device scaling.</li>
+        </ol></p>
+
+        <div class="image-div">
+        <img src="images/lobby.jpg" />
+            <div class="hotspot" id="dotA"><a href="">A</a></div>
+            <div class="hotspot" id="dotB"><a href="">B</a></div>
+            <div id="security-desk">Security Desk</div>
+            <div id="waiting-area">Waiting Area</div>
+        <figcaption>J School lobby</figcaption>
+        </div>
+    </section>
+
+    <section>
+
+<p>Types
+Static (default)
+Relative
+Absolute
+Fixed
+Sticky</p>
+
+<p>How they work
+Corners
+Scrolling
+Z-index</p>
+
+<p>How they’re used
+Hotspots
+Mobile
+Convenience vs Annoyance</p>
+
+<p>Exercises
+Make a hotspot
+Display an image on a page
+Make a small circle
+Position it over the image
+Repeat so you have two hotspots in different positions
+Make another image with different positions for its hotspots
+Change the opacity across all
+Overlay a call out box</p>
+
+
+<p><pre><code class="language-css">
+.example-box {
+    position: relative;
+}
+
+.example-box {
+    position: absolute;
+}
+
+.example-box {
+    position: fixed;
+}
+
+.example-box {
+    position: sticky;
+}</code></pre></p>
+    </section>
+
+</main>
+
+</div><!-- end centered container div -->
+
+<!-- jquery reference line -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+</body>
+</html>
