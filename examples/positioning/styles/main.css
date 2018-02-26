@@ -1,0 +1,243 @@
+/*
+=======================================
+MOBILE FIRST WEB DESIGN
+Use these industry standard breakpoints
+to build responsive web pages and sites.
+Style layouts for small screens first,
+then add complexity for larger screens.
+=======================================
+*/
+
+/* Use this standard to ensure that 
+   all browsers have the same base styles */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/* Enter universal style rules first,
+   plus rules for the smallest screens */
+
+
+body {
+    margin: auto;
+    background-color: #eee;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    color: #333;
+    }
+
+.centered-content {
+    margin: auto;
+    }
+
+h1 {
+    font-family: 'Patua One', cursive;
+    }
+
+h2 {
+    font-family: 'Droid Sans', sans-serif;
+    color: #999;
+    }
+
+img {
+    width: 100%;
+    height: auto;
+    }
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+    }
+
+.image-div {
+    position: relative;
+    width: 100%;
+    height: auto;
+    }
+
+.hotspot {
+    position: absolute;
+    border-radius: 100px;
+    border: 2px solid #fff;
+    outline: none;
+    background: #ccc;
+    opacity: .6;
+    padding: 10px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    vertical-align: middle;
+    }
+
+.hotspot a {
+    text-decoration: none;
+    }
+
+#dotA {
+    top: 55%;
+    left: 20%;
+    }
+
+#dotB {
+    top: 43%;
+    left: 75%;
+    }
+
+#security-desk {
+    position: absolute;
+    opacity: .6;
+    top: 62%;
+    left: 17.25%;
+    z-index: 10;
+    color: #fff;
+}
+
+#waiting-area {
+    position: absolute;
+    opacity: .6;
+    top: 50%;
+    left: 72.75%;
+    z-index: 11;
+    color: #fff;
+}
+
+
+/* Smartphones at vertical portrait width */ 
+@media only screen and (min-width : 320px) {
+
+.centered-content {
+    max-width: 480px; /* up to standard 480 width of smartphones at landscape orientation */
+    margin: 5px;
+    }
+
+h1 {
+    font-size: 24px;
+    }
+
+h2 {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 18px;
+    color: #999;
+    margin-top: -5px;
+    }
+
+p {
+    font-size: 12px;
+    }
+
+figcaption {
+    font-size: 10px;
+    }
+
+}
+
+
+/* ============================ */
+
+
+/* Smartphones at horizontal landscape width */ 
+@media only screen and (min-width : 480px) {
+    
+    .centered-content {
+    max-width: 768px;
+    margin: 10px;
+    }
+
+h1 {
+    font-size: 28px;
+    }
+
+h2 {
+    font-size: 20px;
+    margin-top: -5px;
+    }
+
+p {
+    font-size: 14px;
+    }
+
+figcaption {
+    font-size: 12px;
+    }
+
+}
+
+/* Tablets at vertical portrait width */
+@media only screen and (min-width : 768px) {
+
+.centered-content {
+    max-width: 992px;
+    width: 768px;
+    margin: auto;
+    }
+
+h1 {
+    font-size: 32px;
+    }
+
+h2 {
+    font-size: 24px;
+    margin-top: -5px;
+    }
+
+p {
+    font-size: 16px;
+    }
+
+figcaption {
+    font-size: 12px;
+    }
+
+}
+
+/* Tablets at horizontal landscape width */
+@media only screen and (min-width : 992px) {
+
+.centered-content {
+    max-width: 1200px;
+    width: 992px;
+    margin: auto;
+    }
+
+h1 {
+    font-size: 36px;
+    }
+
+h2 {
+    font-size: 28px;
+    margin-top: -5px;
+    }
+
+p {
+    font-size: 18px;
+    }
+
+figcaption {
+    font-size: 14px;
+    }
+}
+
+
+/* Laptops and desktop monitors with large horizontal widths */
+@media only screen and (min-width : 1200px) {
+.centered-content {
+    max-width: 992px;
+    width: 992px;
+    margin: auto;
+    }
+
+h1 {
+    font-size: 36px;
+    }
+
+h2 {
+    font-size: 28px;
+    margin-top: -5px;
+    }
+
+p {
+    font-size: 18px;
+    }
+
+figcaption {
+    font-size: 14px;
+    }
+}
