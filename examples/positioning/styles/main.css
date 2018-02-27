@@ -79,7 +79,7 @@ figcaption {
     }
 
 #dotB {
-    top: 45%;
+    top: 44%;
     left: 75%;
     }
 
@@ -95,7 +95,7 @@ figcaption {
 #waiting-area {
     position: absolute;
     opacity: .6;
-    top: 50%;
+    top: 51%;
     left: 72.75%;
     z-index: 11;
     color: #fff;
