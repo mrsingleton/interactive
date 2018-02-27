@@ -59,9 +59,11 @@ figcaption {
     height: 15px;
     text-align: center;
     padding: 10px;
-    color: #fff;
+    color: #666;
     background: #ccc;
     opacity: .6;
+    font-family: sans-serif;
+    font-weight: bold;
     outline: none;
     border: 2px solid #fff;
     border-radius: 100px;
